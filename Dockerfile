@@ -1,6 +1,6 @@
 FROM python:2
 
-EXPOSE 80
+EXPOSE 9999
 ENTRYPOINT ["/usr/local/bin/GMusicProxy"]
 CMD ["--config=/etc/gmusicproxy.cfg"]
 
