@@ -6,7 +6,7 @@
 version: '3'
 
 services:
-  liquidsoap:
+  gmusicproxy:
     container_name: gmusicproxy
     image: m0rf30/docker-gmusicproxy:latest
     tty: true
