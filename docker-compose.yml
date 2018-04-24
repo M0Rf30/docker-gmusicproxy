@@ -12,4 +12,5 @@ services:
     tty: true
     volumes:
     - /etc/gmusicproxy.cfg:/etc/gmusicproxy.cfg
-
+    ports:
+    - 9999:9999
