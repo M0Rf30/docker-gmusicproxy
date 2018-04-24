@@ -7,13 +7,9 @@ version: '3'
 
 services:
   liquidsoap:
-    container_name: liquidsoap
-    image: m0rf30/docker-liquidsoap:latest
+    container_name: gmusicproxy
+    image: m0rf30/docker-gmusicproxy:latest
     tty: true
-    command: 'liquidsoap -v /radio/radio.liq'
     volumes:
-    - .:/radio
-    - ./gmusic:/radio/gmusic
-    - ./jingles:/radio/jingles
-    network_mode: host
+    - /etc/gmusicproxy.cfg:/etc/gmusicproxy.cfg
 
