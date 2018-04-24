@@ -1,4 +1,4 @@
-FROM python:2
+FROM python
 
 EXPOSE 9999
 ENTRYPOINT ["/usr/local/bin/GMusicProxy"]
