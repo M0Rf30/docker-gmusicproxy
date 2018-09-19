@@ -1,7 +1,8 @@
-FROM python
-
+FROM m0rf30/arch-yay:latest
+LABEL authors="M0Rf30"
+RUN yay -Syu --noconfirm
+RUN yay -S gmusicproxy --noconfirm
+RUN yay -Yc --noconfirm
 EXPOSE 9999
-ENTRYPOINT ["/usr/local/bin/GMusicProxy"]
+ENTRYPOINT ["/usr/bin/GMusicProxy"]
 CMD ["--config=/etc/gmusicproxy.cfg"]
-
-RUN pip install --no-cache https://github.com/diraimondo/gmusicproxy/tarball/master
