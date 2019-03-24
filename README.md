@@ -3,6 +3,6 @@
 
 #### Example
 ```
-$ docker run --name gmusicproxy -v /PATH/TO/gmusicproxy.cfg:/etc/gmusicproxy.cfg \
-    -p 80:80 m0rf30/docker-gmusicproxy:latest --config=/etc/gmusicproxy.cfg
+$ docker run --name gmusicproxy -v mobileclient.cred:/root/.local/share/gmusicapi/ \
+    -p 80:80 m0rf30/docker-gmusicproxy:latest
 ```
